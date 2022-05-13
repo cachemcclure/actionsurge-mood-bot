@@ -9,6 +9,7 @@ import pandas as pd
 ## Load Environmental Variables
 #load_dotenv()
 creds = pload(open('creds.pkl','rb'))
+TOKEN = creds['token']
 channel_list = ['general','twsnbn-thursday-afternoon','announcements']
 music_list = pd.read_csv('music_meta.csv',delimiter=',')
 
