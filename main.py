@@ -8,8 +8,7 @@ import pandas as pd
 
 ## Load Environmental Variables
 #load_dotenv()
-#TOKEN = 'ODI3NDA2ODY1NDM1ODUyODEx.YGaksQ._AzciXMPDGrFRhVhXntLAlLvB7Y'
-TOKEN = 'OTcxODc2MjQ4MjMyMDAxNjA2.YnQ4Sg.OHexWvXY_D98EfbjLgPsNcgy44g'
+creds = pload(open('creds.pkl','rb'))
 channel_list = ['general','twsnbn-thursday-afternoon','announcements']
 music_list = pd.read_csv('music_meta.csv',delimiter=',')
 
